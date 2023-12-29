@@ -1,15 +1,17 @@
-::after{width: 48px; height: 4px; margin-top: 24px; border-radius: 2px; background:#404BBF;}
+::after{display: flex; align-items: end;
+    width: 48px; height: 4px; border-radius: 2px; background:#ffffff;}
 body{width: 1440px; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 500; line-height: 24px; 
     letter-spacing: 0.64px;}
 header{display: flex; justify-content: space-around; align-items: center;}
-h2{color: #2E2F42; font-size: 36px; font-style: normal; font-weight: 700; line-height: 40px; 
-    letter-spacing: 0.72px; text-transform: capitalize; text-align: center;}
 .logo{color: #4D5AE5;}
-header>p{font-family: Raleway; font-size: 18px; font-style: normal; font-weight: 700;line-height: 21px;
+header>p{display: flex; font-family: Raleway; font-size: 18px; font-style: normal; font-weight: 700;line-height: 21px;
     letter-spacing: 0.54px;}
 header>nav{display: flex; column-gap: 40px;}
 header>address{display: flex; column-gap: 40px;}
 
+header>nav>a:hover::after{content: ""; background:#404BBF;}
+h2{color: #2E2F42; font-size: 36px; font-style: normal; font-weight: 700; line-height: 40px; 
+    letter-spacing: 0.72px; text-transform: capitalize; text-align: center;}
 .section1{height: 600px;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../image/people-office1.png);}
 .section1>h1{padding: 188px 472px 48px 472px; color: #FFF; font-size: 56px; font-weight: 700; line-height: 60px; letter-spacing: 1.12px;}
