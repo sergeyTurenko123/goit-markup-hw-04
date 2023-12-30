@@ -18,7 +18,7 @@ h2{color: #2E2F42; font-size: 36px; font-style: normal; font-weight: 700; line-h
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)),url(../images/img-name.png);}
 .section1 h1{padding: 188px 472px 48px 472px; color: #FFF; font-size: 56px; font-weight: 700; line-height: 60px; letter-spacing: 1.12px;}
 .section1 button{border-radius: 4px; background: #4D5AE5; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 16px 32px; margin-left: 635px; transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+    padding: 16px 32px; margin-left: 635px; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .section2{margin:120px 156px; display: flex; column-gap: 8px;}
 .section2 div div{width: 264px; height: 112px; flex-shrink: 0; border-radius: 4px; border: 1px solid #8E8F99;
     background:#F4F4FD; display: flex; justify-content: center;}
