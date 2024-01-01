@@ -1,5 +1,5 @@
-::after{content: ""; position: absolute; left: 0; bottom: -1px; height: 4px; background-color: #404bbf;
-    width: 100%; border-radius: 2px;}
+::after{content: "";}
+ul,ol{list-style-type: none;}
 body{width: 1440px; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 500; line-height: 24px; 
     letter-spacing: 0.64px;}
 header{display: flex; justify-content: space-around; align-items: center; border-bottom: 1px solid #E7E9FC; 
@@ -8,50 +8,48 @@ header{display: flex; justify-content: space-around; align-items: center; border
 .logo{color: #404bbf;}
 header p{display: flex; font-family: Raleway; font-size: 18px; font-style: normal; font-weight: 700;line-height: 21px;
     letter-spacing: 0.54px;}
-header nav{display: flex; column-gap: 40px;}
-.nav1{font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 500; line-height: 24px;
-    letter-spacing: 0.32px;
-    position: relative; color:#404bbf; transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1)}
-.nav2{color:#2E2F42; font-family: Roboto; font-size: 16px; font-style: normal; font-weight: 500;
-    line-height: 24px; letter-spacing: 0.32px;}
+.nav{display: flex; column-gap: 40px;}
+.nav a{position: relative; transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.nav a:hover{color: #404bbf;}
+.nav a:hover::after{position: absolute; left: 0; bottom: -1px; height: 4px; background-color: #404bbf;
+    width: 100%; border-radius: 2px;}
 header address{display: flex; column-gap: 40px; transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 h2{color: #2E2F42; font-size: 36px; font-style: normal; font-weight: 700; line-height: 40px; 
     letter-spacing: 0.72px; text-transform: capitalize; text-align: center;}
-.section1{height: 600px; max-width: 1440px; background-repeat: no-repeat; background-position: center;
+.sectiona{height: 600px; max-width: 1440px; background-repeat: no-repeat; background-position: center;
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)),url(../images/img-name.jpg);}
-.section1 h1{padding: 188px 472px 48px 472px; color: #FFF; font-size: 56px; font-weight: 700; line-height: 60px; letter-spacing: 1.12px;}
-.section1 button{border-radius: 4px; background: #4D5AE5; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+h1{padding: 188px 472px 48px 472px;margin: 0; color: #FFF; 
+    font-size: 56px; font-weight: 700; line-height: 60px; letter-spacing: 1.12px;}
+.button{border-radius: 4px; background: #4D5AE5; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 16px 32px; margin-left: 635px; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.section2{margin:120px 156px; display: flex; column-gap: 8px;}
-.section2 div div{width: 264px; height: 112px; flex-shrink: 0; border-radius: 4px; border: 1px solid #8E8F99;
+.sectionb{margin:120px 156px; display: flex; column-gap: 8px;}
+.sectionb div div{width: 264px; height: 112px; flex-shrink: 0; border-radius: 4px; border: 1px solid #8E8F99;
     background:#F4F4FD; display: flex; justify-content: center;}
-.section3>h2{padding-top: 120px; padding-bottom:72px;}
-.section3{background: #F4F4FD;}
-.section3>div{display: flex; column-gap: 32px; justify-content: center;}
-.section3>div>div{border-radius: 0px 0px 4px 4px; background: #FFF; text-align: center;
+.OURTEAM h2{padding-top: 120px; padding-bottom:72px;}
+.OURTEAM{background: #F4F4FD;}
+.OURTEAM ul{display: flex; column-gap: 32px; justify-content: center;}
+.card{border-radius: 0px 0px 4px 4px; background: #FFF; text-align: center;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     display: block; padding-bottom: 32px; row-gap: 32px; margin-bottom:120px;}
-.section3>div>div>div{display: flex; justify-content: space-around;}
-.section4{margin-top: 120px; margin-left: 156px; margin-bottom: 120px;}
-.section4>div{display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 48px;}
-.section4>div>div{display: block; width: 360px; gap: 32px; flex-shrink: 0; border: 1px solid #E7E9FC; background: #FFF;}
-.section4>h2{justify-content: center; padding-bottom: 72px;}
-footer{display: flex; height: 312px; align-items: baseline; 
-    background-color: rgba(46, 47, 66, 1); color:#F4F4FD;}
-footer>div>p{width: 264px;}
-.social2{display: flex; column-gap: 16px;}
-.web{ padding-left: 156px; padding-right: 120px; padding-top: 100px;}
-
+.card img{width: 100%;}
+.ul{display: flex; justify-content: space-around;}
 .icon{fill: #FFF;}
+.OurPortfolio{margin-top: 120px; margin-left: 156px; margin-bottom: 120px;}
+.OurPortfolio ul{display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 48px;}
+.OurPortfolio ul li{display: block; width: 360px; gap: 32px; flex-shrink: 0; transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1); position: relative;
+    border: 1px solid #E7E9FC; background: #FFF;}
+.OurPortfolio h2{justify-content: center; padding-bottom: 72px;}
+.OurPortfolio ul li:hover{box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);}
+footer{height: 312px; background-color: rgba(46, 47, 66, 1); color:#F4F4FD;}
+footer ul{padding-left: 156px; padding-top: 100px; display: flex; column-gap: 120px;}
+.text{display: block; width: 264px; row-gap: 16px;}
+.finger{position: absolute; right: 0; bottom: 0;}
 .social{display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; border-radius: 50%;
     background-color:rgba(77, 90, 229, 1);}
-.social:hover{background-color: rgba(255, 255, 255, 1);}
+.social:hover{background-color: rgba(255, 255, 255, 0.5);}
 .social:hover .icon {fill: #000000;}
-.box{position: relative;}
-.box1{position: relative; overflow: hidden;}
-.overlay {position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; text-align: center; padding-top: 40px;
+.boxa{position: relative; overflow: hidden;}
+.overlay {position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; text-align: center;
     transform: translateY(+100%); background:#4D5AE5; transition: transform 250ms ease-in-out;}
-.box:hover .overlay {transform: translateY(0);}
-.finger{position: absolute; right: 0; bottom: 0;}
-.section4>div>div:hover{box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);}
+.box:hover .overlay {transform: translateY(0); padding-top: 0;}
